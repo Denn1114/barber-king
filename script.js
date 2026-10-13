@@ -116,6 +116,14 @@ const bookingDb = window.supabase.createClient(
 
 const serviceSelect = document.getElementById("service");
 const masterSelect = document.getElementById("master");
+
+const urlParams = new URLSearchParams(window.location.search);
+const selectedMaster = urlParams.get("master");
+
+if (["andriy", "maksym"].includes(selectedMaster)) {
+    masterSelect.value = selectedMaster;
+}
+
 const timeSelect = document.getElementById("time");
 
 const durations = {
