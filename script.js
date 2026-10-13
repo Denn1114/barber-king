@@ -52,7 +52,7 @@ sendBooking(booking);
 const BOOKING_API =
     "https://dkhmjpqmleuhyailhcud.supabase.co/functions/v1/super-service";
 
-const ENABLE_LIVE_BOOKINGS = false;
+const ENABLE_LIVE_BOOKINGS = true;
 
 async function sendBooking(booking) {
     
