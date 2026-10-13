@@ -1,0 +1,168 @@
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 100px 20px;
+}
+
+h1 {
+    color: #d4af37;
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    color: #cccccc;
+    font-size: 18px;
+}
+
+button {
+    background-color: #d4af37;
+    color: black;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f5d76e;
+}
+
+.services {
+    margin-top: 100px;
+}
+
+.services h2 {
+    color: #d4af37;
+    margin-bottom: 30px;
+}
+
+.service {
+    background-color: #222;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 1px solid #d4af37;
+}
+
+.service h3 {
+    font-size: 22px;
+}
+
+.service p {
+    color: #d4af37;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
+    padding: 20px 40px;
+    margin: -100px -20px 70px;
+    border-bottom: 1px solid #d4af37;
+}
+
+.logo {
+    color: #d4af37;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+.contacts {
+    margin-top: 100px;
+    padding: 50px 20px;
+    background-color: #1c1c1c;
+    border-top: 1px solid #d4af37;
+}
+
+.contacts h2 {
+    color: #d4af37;
+}
+
+.contacts p {
+    margin: 20px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.78),
+            rgba(0, 0, 0, 0.78)
+        ),
+        url("barbershop.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 80px 15px;
+        background-attachment: scroll;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        margin: -80px -15px 50px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .service {
+        max-width: 100%;
+    }
+
+    .services {
+        margin-top: 70px;
+    }
+}
