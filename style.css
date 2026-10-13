@@ -166,3 +166,87 @@ body {
         margin-top: 70px;
     }
 }
+
+.booking-link {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #121212;
+    padding: 15px 35px;
+    margin-top: 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.booking-link:hover {
+    background-color: #f5d76e;
+}
+
+.masters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 60px auto;
+}
+
+.master-card {
+    background-color: #222;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    padding: 35px 25px;
+    width: 280px;
+}
+
+.master-card h2 {
+    color: #d4af37;
+}
+
+.master-card p {
+    line-height: 1.6;
+}
+
+.master-card .booking-link {
+    margin-top: 15px;
+}
+
+.booking-form {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #222;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.booking-form label {
+    display: block;
+    margin: 18px 0 8px;
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 13px;
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.booking-form button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.form-note {
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.5;
+}
