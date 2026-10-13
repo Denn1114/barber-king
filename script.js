@@ -186,3 +186,9 @@ console.log("Помилка Supabase:", error);
 serviceSelect.addEventListener("change", updateAvailableTimes);
 masterSelect.addEventListener("change", updateAvailableTimes);
 dateInput.addEventListener("change", updateAvailableTimes);
+
+console.log("Перевірка: script.js завантажився");
+
+serviceSelect.addEventListener("change", () => {
+    console.log("Обрано послугу:", serviceSelect.value);
+});
