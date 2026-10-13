@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Адмінпанель | BARBER KING</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">BK ✂</div>
+        <nav>
+            <a href="index.html">На сайт</a>
+        </nav>
+    </header>
+
+    <h1>Адмінпанель</h1>
+    <p>Керування бронюваннями BARBER KING</p>
+
+    <form class="booking-form" id="adminLogin">
+        <h2>Вхід адміністратора</h2>
+
+        <label for="email">Email</label>
+        <input type="email"
+               id="email"
+               placeholder="Введіть email"
+               required>
+
+        <label for="password">Пароль</label>
+        <input type="password"
+               id="password"
+               placeholder="Введіть пароль"
+               required>
+
+        <button type="submit">Увійти</button>
+    </form>
+    
+<section id="adminPanel" class="admin-panel" hidden>
+    <h2>Бронювання клієнтів</h2>
+
+<div class="admin-filters">
+    <input type="date" id="filterDate">
+
+    <select id="filterMaster">
+        <option value="">Усі майстри</option>
+        <option value="andriy">Андрій</option>
+        <option value="maksym">Максим</option>
+    </select>
+
+    <button type="button" id="resetFilters">
+        Скинути
+    </button>
+</div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Клієнт</th>
+                    <th>Телефон</th>
+                    <th>Послуга</th>
+                    <th>Майстер</th>
+                    <th>Дата</th>
+                    <th>Час</th>
+                    <th>Статус</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+            <tbody id="bookingsList"></tbody>
+        </table>
+    </div>
+
+    <button id="logoutBtn" type="button">
+        Вийти
+    </button>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

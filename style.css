@@ -250,3 +250,71 @@ body {
     text-align: center;
     line-height: 1.5;
 }
+
+.admin-panel {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #222;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+}
+
+.admin-panel h2 {
+    color: #d4af37;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.admin-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+.admin-panel th,
+.admin-panel td {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    text-align: left;
+}
+
+.admin-panel th {
+    color: #d4af37;
+}
+
+.admin-panel tr:hover {
+    background: #303030;
+}
+
+.admin-panel button {
+    margin: 5px;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.admin-filters {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.admin-filters input,
+.admin-filters select {
+    padding: 12px;
+    background: #333;
+    color: white;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    font-size: 16px;
+    max-width: 100%;
+}
