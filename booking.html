@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-запис | BARBER KING</title>
+    <link rel="stylesheet" href="style.css">
+    
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">BK ✂</div>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="services.html">Послуги</a>
+            <a href="masters.html">Майстри</a>
+            <a href="booking.html">Записатися</a>
+        </nav>
+    </header>
+
+    <h1>Онлайн-запис</h1>
+    <p>Обери послугу, майстра та зручний час</p>
+
+    <form class="booking-form" id="bookingForm">
+        <label for="clientName">Ваше ім'я</label>
+        <input type="text" id="clientName"
+               placeholder="Введіть ім'я" required>
+
+        <label for="clientPhone">Номер телефону</label>
+        <input type="tel" id="clientPhone"
+               placeholder="+380XXXXXXXXX" required>
+
+        <label for="service">Послуга</label>
+        <select id="service" required>
+            <option value="">Оберіть послугу</option>
+            <option value="haircut">Стрижка — 500 грн</option>
+            <option value="beard">Борода — 300 грн</option>
+            <option value="combo">Стрижка + борода — 700 грн</option>
+        </select>
+
+        <label for="master">Майстер</label>
+        <select id="master" required>
+            <option value="">Оберіть майстра</option>
+            <option value="andriy">Андрій</option>
+            <option value="maksym">Максим</option>
+        </select>
+
+        <label for="date">Дата</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Час</label>
+        <select id="time" required>
+            <option value="">Оберіть час</option>
+            <option>10:00</option>
+            <option>11:00</option>
+            <option>12:00</option>
+            <option>13:00</option>
+            <option>14:00</option>
+            <option>15:00</option>
+            <option>16:00</option>
+            <option>17:00</option>
+            <option>18:00</option>
+        </select>
+
+<label>Перевірка безпеки</label>
+
+<div class="cf-turnstile"
+     data-sitekey="0x4AAAAAAFVgRgUXcYx5FODZ"
+     data-theme="dark">
+</div>
+
+        <button type="submit">Підтвердити запис</button>
+        <p class="form-note">
+            Демоверсія: записи поки не надсилаються.
+        </p>
+    </form>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
